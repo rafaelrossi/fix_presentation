@@ -66,7 +66,7 @@ public class Main
 
     public static void main(String[] args) throws ConfigError, FileNotFoundException, InterruptedException, SessionNotFound
     {
-        SessionSettings settings = new SessionSettings("/Users/rossir/workspace/java/fix_pre/acceptor/src/main/resources/config.cfg");
+        SessionSettings settings = new SessionSettings("acceptor/src/main/resources/config.cfg");
 
         Application application = new ServerApplication();
         MessageStoreFactory messageStoreFactory = new FileStoreFactory(settings);
